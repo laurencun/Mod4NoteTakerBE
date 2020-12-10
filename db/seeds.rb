@@ -3,9 +3,12 @@ require 'faker'
 User.delete_all
 Todo.delete_all
 
+User.create(username:'Lauren_Cun', password: 'password')
+
 5.times do 
     User.create(
-        username: Faker::Name.name
+        username: Faker::Name.name,
+        password: Faker::Lorem.word
     )
 
 end
