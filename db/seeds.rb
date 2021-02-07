@@ -1,7 +1,7 @@
 require 'faker'
 
-User.delete_all
-Todo.delete_all
+# User.delete_all
+# Todo.delete_all
 
 User.create(username:'Lauren_Cun', password: 'password')
 
