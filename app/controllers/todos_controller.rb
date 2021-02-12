@@ -6,7 +6,7 @@ class TodosController < ApplicationController
     end
 
     def create
-#    byebug     
+        # byebug  
         todo = Todo.create(todo_params)
         render json: todo
     end
@@ -24,6 +24,7 @@ class TodosController < ApplicationController
     end
 
     def destroy
+        # byebug
         todo = Todo.find(params[:id])
         todo.destroy
         render json: todo

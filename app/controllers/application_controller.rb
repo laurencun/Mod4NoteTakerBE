@@ -1,5 +1,9 @@
 class ApplicationController < ActionController::API
 
+    def fallback_index_html
+        render :file => 'public/index.html'
+      end
+
     # def issue_token(user)
     #     JWT.encode(user_id: user.id, ENV['secret_key'], 'HS256')
     # end
