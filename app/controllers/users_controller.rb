@@ -5,4 +5,9 @@ class UsersController < ApplicationController
         render json: users, include: :todos
     end
 
+
+    def create 
+        user = User.create(username: params[:username], password: params[:password])
+    end
+
 end
